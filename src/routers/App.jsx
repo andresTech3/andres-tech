@@ -1,7 +1,7 @@
 
 import '../styles/App.css';
 
-import { BrowserRouter,Routes,Route} from 'react-router-dom'
+import { HashRouter,Routes,Route} from 'react-router-dom'
 import Menu from '../components/menu/Menu';
 
 //paginas
@@ -18,7 +18,7 @@ import CssView from '../pages/CssView/Css_View';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
           <Menu/>
           <Routes>
             <Route exact path='/andres-tech/' element={<Home/>}/>
@@ -31,7 +31,7 @@ function App() {
             <Route exact element={<Error404/>}/>
           </Routes>
           <Footer/>
-        </BrowserRouter>
+        </HashRouter>
     </div>
   );
 }

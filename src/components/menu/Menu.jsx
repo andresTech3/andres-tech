@@ -21,7 +21,7 @@ function Menu() {
     <>
           <NavabarContainer>
               <NavbarWrapper>
-              <LinkUrl href="/">
+              <LinkUrl href="/andres-tech/">
                 <IconLogo>
                     <FaHeart className="crz-tech"/> AndresTech
                 </IconLogo>
