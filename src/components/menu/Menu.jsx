@@ -21,7 +21,7 @@ function Menu() {
     <>
           <NavabarContainer>
               <NavbarWrapper>
-              <LinkUrl href="/">
+              <LinkUrl href="/andres-tech/">
                 <IconLogo>
                     <FaHeart className="crz-tech"/> AndresTech
                 </IconLogo>
@@ -34,22 +34,22 @@ function Menu() {
 
                 <MenuUl modal={modalMovil}>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink href="/about"><FaHome/>Acerca</MenuItemLink>
+                    <MenuItemLink href="/andres-tech/about"><FaHome/>Acerca</MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink href="/proyect" ><MdOutlineArticle/>Proyectos</MenuItemLink>
+                    <MenuItemLink href="/andres-tech/proyect" ><MdOutlineArticle/>Proyectos</MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink href="/Blogs" ><FaBloggerB/>Blogs</MenuItemLink>
+                    <MenuItemLink href="/andres-tech/Blogs" ><FaBloggerB/>Blogs</MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink href="/Dis" ><FaPenFancy/>Diseño</MenuItemLink>
+                    <MenuItemLink href="/andres-tech/Dis" ><FaPenFancy/>Diseño</MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink href="/CssView" ><FaCss3/>Css Animations</MenuItemLink>
+                    <MenuItemLink href="/andres-tech/CssView" ><FaCss3/>Css Animations</MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink href="/Productos" ><MdProductionQuantityLimits/>Productos</MenuItemLink>
+                    <MenuItemLink href="/andres-tech/Productos" ><MdProductionQuantityLimits/>Productos</MenuItemLink>
                   </MenuItem>
                   
                 </MenuUl>

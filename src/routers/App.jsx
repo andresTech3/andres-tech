@@ -21,13 +21,13 @@ function App() {
       <BrowserRouter>
           <Menu/>
           <Routes>
-            <Route exact path='/' element={<Home/>}/>
-            <Route exact path='/about' element={<About/>}/>
-            <Route exact path='/proyect' element={<Proyect/>}/>
-            <Route exact path='/Productos' element={<Productos/>}/>
-            <Route exact path='/Blogs' element={<Blogs/>}/>
-            <Route exact path='/Dis' element={<Diseños/>}/>
-            <Route exact path='/CssView' element={<CssView/>}/>
+            <Route exact path='/andres-tech/' element={<Home/>}/>
+            <Route exact path='/andres-tech/about' element={<About/>}/>
+            <Route exact path='/andres-tech/proyect' element={<Proyect/>}/>
+            <Route exact path='/andres-tech/Productos' element={<Productos/>}/>
+            <Route exact path='/andres-tech/Blogs' element={<Blogs/>}/>
+            <Route exact path='/andres-tech/Dis' element={<Diseños/>}/>
+            <Route exact path='/andres-tech/CssView' element={<CssView/>}/>
             <Route exact element={<Error404/>}/>
           </Routes>
           <Footer/>
