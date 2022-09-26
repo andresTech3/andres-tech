@@ -22,7 +22,7 @@ function App() {
           <Menu/>
           <Routes>
             <Route exact path='/andres-tech/' element={<Home/>}/>
-            <Route exact path='/about' component={<About/>}/>
+            <Route exact path='/about' element={<About/>}/>
             <Route exact path='/proyect' element={<Proyect/>}/>
             <Route exact path='/Productos' element={<Productos/>}/>
             <Route exact path='/Blogs' element={<Blogs/>}/>
