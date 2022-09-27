@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import { Link } from "react-router-dom"
 import './crzTech.css'
 //import react-icons
 import {FaHeart,FaHome,FaBars,FaTimes,FaBloggerB,FaPenFancy,FaCss3} from "react-icons/fa"
@@ -21,10 +22,12 @@ function Menu() {
     <>
           <NavabarContainer>
               <NavbarWrapper>
-              <LinkUrl href="/andres-tech/">
-                <IconLogo>
-                    <FaHeart className="crz-tech"/> AndresTech
-                </IconLogo>
+              <LinkUrl>
+                <Link to = "/">
+                  <IconLogo>
+                      <FaHeart className="crz-tech"/> AndresTech
+                  </IconLogo>
+                </Link>
               </LinkUrl>
                 <IconLogoMobile onClick={handleModal} >
                   {
@@ -34,22 +37,22 @@ function Menu() {
 
                 <MenuUl modal={modalMovil}>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink href="/about"><FaHome/>Acerca</MenuItemLink>
+                    <MenuItemLink><Link to = "/about"><FaHome/>Acerca</Link></MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink href="/proyect" ><MdOutlineArticle/>Proyectos</MenuItemLink>
+                    <MenuItemLink><Link to ="/proyect"><MdOutlineArticle/>Proyectos</Link></MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink href="/Blogs" ><FaBloggerB/>Blogs</MenuItemLink>
+                    <MenuItemLink><Link to ="/Blogs"><FaBloggerB/>Blogs</Link></MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink href="/Dis" ><FaPenFancy/>Diseño</MenuItemLink>
+                    <MenuItemLink><Link to ="/Dis"><FaPenFancy/>Diseño</Link></MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink href="/CssView" ><FaCss3/>Css Animations</MenuItemLink>
+                    <MenuItemLink><Link to ="/CssView"><FaCss3/>Css Animations</Link></MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink href="/Productos" ><MdProductionQuantityLimits/>Productos</MenuItemLink>
+                    <MenuItemLink><Link to ="/Productos"><MdProductionQuantityLimits/>Productos</Link></MenuItemLink>
                   </MenuItem>
                   
                 </MenuUl>
