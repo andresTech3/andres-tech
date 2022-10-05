@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom"
 import { ContainerBlogsItems, ContainerItemsNewBlogs, TextProyectBlogs, LinkAllBlogs } from './ContainerHeaderBlogs.element'
 import NewBlogsHome from "../../components/newBlogs/NewBlogsHome"
 import useGetNewBlogs from '../../hook/useGetNewBlogs';
@@ -17,7 +18,8 @@ function ContainerHeaderBlogs() {
               blogsNew = {dataBlogs}
             />
           </ContainerItemsNewBlogs>
-          <LinkAllBlogs href={"/Blogs"}>Todos los Blogs...</LinkAllBlogs>
+          <LinkAllBlogs><Link to="/Blogs" style={{color : "#08fdd8", textDecoration : "none"}}> Todos los Blogs... </Link></LinkAllBlogs>
+          
         </ContainerBlogsItems>
     </>
   )

@@ -73,7 +73,7 @@ export const MenuItem = styled.li`
     
 `;
 
-export const MenuItemLink = styled.a`
+export const MenuItemLink = styled.div`
     text-decoration : none;
     color:#aaa;
     &:hover{
@@ -92,6 +92,6 @@ export const IconLogoMobile = styled.div`
     }
 `;
 
-export const LinkUrl = styled.a`
-    text-decoration :none;
+export const LinkUrl = styled.div`
+        text-decoration: none;
 `

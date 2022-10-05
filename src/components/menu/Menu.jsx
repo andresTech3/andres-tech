@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { Link } from "react-router-dom"
-import './crzTech.css'
+import './menuItem.css'
 //import react-icons
 import {FaHeart,FaHome,FaBars,FaTimes,FaBloggerB,FaPenFancy,FaCss3} from "react-icons/fa"
 import {MdOutlineArticle,MdProductionQuantityLimits} from "react-icons/md"
@@ -23,11 +23,11 @@ function Menu() {
           <NavabarContainer>
               <NavbarWrapper>
               <LinkUrl>
-                <Link to = "/">
                   <IconLogo>
-                      <FaHeart className="crz-tech"/> AndresTech
-                  </IconLogo>
-                </Link>
+                        <Link className="linkUrl" to = "/andres-tech/">
+                            <FaHeart className="crz-tech"/> AndresTech
+                        </Link>
+                  </IconLogo> 
               </LinkUrl>
                 <IconLogoMobile onClick={handleModal} >
                   {
@@ -37,22 +37,22 @@ function Menu() {
 
                 <MenuUl modal={modalMovil}>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink><Link to = "/about"><FaHome/>Acerca</Link></MenuItemLink>
+                    <MenuItemLink className="menuItemLink"><Link className="menuItemLink" to = "/about"><FaHome/>Acerca</Link></MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink><Link to ="/proyect"><MdOutlineArticle/>Proyectos</Link></MenuItemLink>
+                    <MenuItemLink className="menuItemLink"><Link className="menuItemLink" to ="/proyect"><MdOutlineArticle/>Proyectos</Link></MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink><Link to ="/Blogs"><FaBloggerB/>Blogs</Link></MenuItemLink>
+                    <MenuItemLink className="menuItemLink"><Link className="menuItemLink" to ="/Blogs"><FaBloggerB/>Blogs</Link></MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink><Link to ="/Dis"><FaPenFancy/>Diseño</Link></MenuItemLink>
+                    <MenuItemLink className="menuItemLink"><Link className="menuItemLink" to ="/Dis"><FaPenFancy/>Diseño</Link></MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink><Link to ="/CssView"><FaCss3/>Css Animations</Link></MenuItemLink>
+                    <MenuItemLink className="menuItemLink"><Link className="menuItemLink" to ="/CssView"><FaCss3/>Css Animations</Link></MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink><Link to ="/Productos"><MdProductionQuantityLimits/>Productos</Link></MenuItemLink>
+                    <MenuItemLink className="menuItemLink"><Link className="menuItemLink" to ="/Productos"><MdProductionQuantityLimits/>Productos</Link></MenuItemLink>
                   </MenuItem>
                   
                 </MenuUl>

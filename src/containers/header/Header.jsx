@@ -1,4 +1,6 @@
 import React,{useState} from 'react'
+import { Link } from "react-router-dom"
+
 // import RedSocial from '../components/RedSocial'
 import "./header.scss"
 import Button from "../../components/Button/Button"
