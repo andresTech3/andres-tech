@@ -24,10 +24,10 @@ function Menu() {
               <NavbarWrapper>
               <LinkUrl>
                   <IconLogo>
-                        <Link className="linkUrl" to = "/andres-tech/">
+                        <Link className="linkUrl" to = "/">
                             <FaHeart className="crz-tech"/> AndresTech
                         </Link>
-                  </IconLogo> 
+                  </IconLogo>
               </LinkUrl>
                 <IconLogoMobile onClick={handleModal} >
                   {

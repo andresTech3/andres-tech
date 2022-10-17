@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from "react-router-dom"
 import NewProyectHome from '../../components/newProyect/NewProyectHome'
 import {ContainerNewProyect, TextProyect, DescProyect, LinkProyectText, TextProyectOculto} from "./ContainerProyecto.element"
 import Button from '../../components/Button/Button'

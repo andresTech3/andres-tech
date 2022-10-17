@@ -17,7 +17,7 @@ function NewBlogs({searchArr}) {
               : itemsBlogs.descripBlogs
             }
           </DescBlogs>
-          <ImgBlogs src={itemsBlogs.imgBlogs} />
+          <ImgBlogs src={itemsBlogs.imgBlogs}/>
         </ContentDataBlog>
       ))}
     </>
