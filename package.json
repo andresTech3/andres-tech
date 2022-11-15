@@ -2,14 +2,19 @@
   "name": "andrestech",
   "private": true,
   "version": "0.0.0",
+  "type" : "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy" : "npx gh-pages -d dist"
+    "deploy": "npx gh-pages -d dist",
+    "db" : "nodemon index.js"
   },
   "dependencies": {
+    "express": "^4.18.2",
     "gh-pages": "^4.0.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.4.1"

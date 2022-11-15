@@ -49,7 +49,7 @@ function Menu() {
                     <MenuItemLink className="menuItemLink"><Link className="menuItemLink" to ="/Dis"><FaPenFancy/>Diseño</Link></MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
-                    <MenuItemLink className="menuItemLink"><Link className="menuItemLink" to ="/CssView"><FaCss3/>Css Animations</Link></MenuItemLink>
+                    <MenuItemLink className="menuItemLink"><Link className="menuItemLink" to ="/CssView"><FaCss3/>Script and Css</Link></MenuItemLink>
                   </MenuItem>
                   <MenuItem onClick={handleModal}>
                     <MenuItemLink className="menuItemLink"><Link className="menuItemLink" to ="/Productos"><MdProductionQuantityLimits/>Productos</Link></MenuItemLink>

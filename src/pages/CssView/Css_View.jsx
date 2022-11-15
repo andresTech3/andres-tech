@@ -8,8 +8,8 @@ function CssView() {
     <>
         <WagonHeader>
             <ImgBg src="https://www.wallpaperuse.com/wallp/64-649276_m.jpg" alt="" />
-            <TitleGreat Size = {'5em'}>Estilos Css</TitleGreat>
-            <DescTitle>Encuentra plantilla de estilos css imnovadoras, en muchas componentes de tu aplicacion o sitio web </DescTitle>
+            <TitleGreat Size = {'5em'}>Script and Css</TitleGreat>
+            <DescTitle>Encuentra programacion funcional, retos de codigos y estilos css</DescTitle>
         </WagonHeader>
 
         <CreativeCss

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ContainerProyectItems, ImgProyect, ModalProyect, ModalVisible, ProyectCont } from "./NewProyect.element"
-import useGetFetch from "../../hook/useGetFetch";
+import { useGetFetch } from "../../hook/useGetFetch";
 
 
 // import useGetNewProyect from '../hook/useGetNewProyect.js'

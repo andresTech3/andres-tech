@@ -24,4 +24,27 @@ const useGetFetch = (API,req) =>{
 
 }
 
-export default useGetFetch;
+const createUsers = async (API,userCreate)=>{
+    
+    try {
+        const config = {
+            method : 'POST',
+            headers : {
+                'Accept' : 'application/json',
+                'Content-Type' : 'application/json',
+            },
+            body : JSON.stringify(userCreate),
+            mode : 'no-cors'
+        }
+        console.log(userCreate, "aqui esta los datos")
+        const users = await fetch(API)
+        const resp = await users.json()
+        console.log(resp)
+
+    } catch (error) {
+        console.log(error)
+    }
+    
+}
+
+export { useGetFetch , createUsers }

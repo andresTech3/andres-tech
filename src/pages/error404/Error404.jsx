@@ -12,7 +12,7 @@ function Error404() {
         <ContainerInfoError>
           <TextError>OOPS!</TextError>
           <h2>Error 404</h2>
-          <Link style={{textDecoration : "none"}} to = "/andres-tech/"><LInkError href="/"> Volver al Inicio</LInkError></Link>
+          <Link style={{textDecoration : "none"}} to = "/"><LInkError href="/"> Volver al Inicio</LInkError></Link>
         </ContainerInfoError>
         <ContainerImgError>
           <ImgError src={useDriver('1cTSGYGcf49HlFBaAu8lZKvsgXrgOqA16')}/>

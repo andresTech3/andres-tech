@@ -1,5 +1,5 @@
 import {useState} from "react"
-import useGetFetch from "./useGetFetch.js";
+import { useGetFetch } from "./useGetFetch.js";
 
   function useGetNewBlogs(){
         const dataBlogs = useGetFetch("https://api-andrestech-blogs.herokuapp.com/blogs","posts");
