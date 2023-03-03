@@ -1,15 +1,20 @@
-import React from 'react'
+import React,{useState} from 'react'
+import { Link } from 'react-router-dom';
 import imgCard from '../../assets/Card Servicio.png'
-import { Cards, CardsInfo, CardTitle, ImgBg } from './style'
+import { A, ButtonCard, Cards, CardsInfo, CardTitle, ImgBg } from './style'
 
 
-function Card() {
+function Card({tall,Width,HeightHover, titleCard, desCard}) {
+
+  const [opacity, setOpacity] = useState('0');
+
   return (
-    <Cards>
-        <ImgBg src={imgCard} alt="img-card" />
-        <CardsInfo>
-          <CardTitle>DISEÑO WEB</CardTitle>
-          <p>Creamos un sitio web personalizado y adactado a tus necesidades con funciones, interacion con los usuarios, animaciones, y mucho mas ¡DESCUBRELO AQUI!</p>
+    <Cards Height={tall} Width={Width} onMouseMove={()=>setOpacity('1')} onMouseOut={()=>setOpacity('0')}>
+        <ImgBg Height = {tall} HeightHover = {HeightHover} src={imgCard} alt="img-card" />
+        <CardsInfo opacity={opacity}>
+          <CardTitle>{titleCard}</CardTitle>
+          <p>{desCard}</p>
+          <ButtonCard type="submit"><A href="https://wa.link/hns8p7">Mas Info Aqui!!</A></ButtonCard> 
         </CardsInfo>
     </Cards>
   )

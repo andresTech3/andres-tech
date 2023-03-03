@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Cards = styled.div`
-    width:100%;
-    height:70vh;
+    width:${props => props.Width ? props.Width : '100%'};
+    height:${props => props.Height ? props.Weight : '70vh'};
     position:relative;
     margin-bottom:10px;
     &::before{
@@ -21,13 +21,32 @@ export const Cards = styled.div`
 export const ImgBg = styled.img`
     position : absolute;
     object-fit:cover;
-    width:100%;
-    height:70vh;
+    width:${props => props.Width ? props.Width : '100%'};
+    height:${props => props.Height ? props.Height : '70vh' };
     &:hover{
-        height:75vh;
+        height:${props => props.HeightHover} 75vh;
         transition:1s;
     }
 `
+
+export const ButtonCard = styled.button`
+    width:25%;
+    height:30px;
+    margin:10px 0px;
+    border:none;
+    overflow:none;
+    cursor:pointer;
+    &:hover{
+        background:#08fdd8;
+    }
+`
+
+export const A = styled.a`
+    text-decoration : none;
+    color:#222;
+`
+
+
 
 export const CardsInfo = styled.div`
     width:50%;
@@ -35,10 +54,10 @@ export const CardsInfo = styled.div`
     display:flex;
     flex-direction:column;
     padding: 100px 35px;
+    opacity:${props => props.opacity} 1;
 `
 
 export const CardTitle = styled.h2`
     font-size :40px;
-    letter-spacing:15px;
     
 `

@@ -9,7 +9,7 @@ function ContainerPasionTech() {
       <ContainerTech>
           <TextProyectOculto trans>Pasion</TextProyectOculto>
           <ContainerInfoPasion>
-              <TitlePasion>Pasión Tech</TitlePasion>
+              <TitlePasion>Habilidades Tecnicas</TitlePasion>
               <DescPasion>
                 Me encanta la tecnologia, y esa experiencia de tener la posibilidad de tener como un super poder para poder crear lo que imaginemos 
               </DescPasion>
@@ -26,6 +26,24 @@ function ContainerPasionTech() {
             <HabilidadesTech col={"#04daa4"} learning ={"65%"} titleContent="Git y GitHub"/>
             <HabilidadesTech col={"#04daa4"} learning ={"70%"} titleContent="WebPack"/>
             <HabilidadesTech col={"#04daa4"} learning ={"68%"} titleContent="NextJs"/>
+          </ContainerAbilityPasion>
+
+          <ContainerInfoPasion>
+              <TitlePasion>Habilidades Complementarias</TitlePasion>
+              <DescPasion>
+              Todos lo que fundamenta al diseño grafico, produccion audiovisual y marketing digital 
+              </DescPasion>
+          </ContainerInfoPasion>
+
+          <ContainerAbilityPasion>
+            <HabilidadesTech col={"#04daa4"} learning ={"90%"} titleContent="Photoshop"/>
+            <HabilidadesTech col={"#04daa4"} learning ={"80%"} titleContent="Illustrator"/>
+            <HabilidadesTech col={"#04daa4"} learning ={"70%"} titleContent="Adobe Effect"/>
+            <HabilidadesTech col={"#04daa4"} learning ={"80%"} titleContent="Adobe Premier"/>
+            <HabilidadesTech col={"#04daa4"} learning ={"75%"} titleContent="Publisista Digital"/>
+            <HabilidadesTech col={"#04daa4"} learning ={"60%"} titleContent="Marketing digital"/>
+            <HabilidadesTech col={"#04daa4"} learning ={"75%"} titleContent="Obs y Vmix Audiovisual"/>
+            <HabilidadesTech col={"#04daa4"} learning ={"75%"} titleContent="Fotografo"/>
           </ContainerAbilityPasion>
       </ContainerTech>
     </>
